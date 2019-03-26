@@ -1,0 +1,200 @@
+@media screen and (max-width: 480px) {
+   .nav {
+     position: relative;
+     width: 100%;
+     height: 80px;
+     background: rgba(0, 0, 0, 0.78);
+     z-index: 1000; }
+     .nav__logo {
+       width: 55%;
+       height: 100%;
+       margin-left: 1%;
+       margin-right: 0; }
+     .nav__links {
+       display: none; }
+     .nav__linksIco {
+       display: none; }
+     .nav .hamburger {
+       display: block;
+       float: right;
+       width: 50px;
+       height: 100%;
+       margin-left: 0;
+       margin-right: 3%;
+       margin-top: 0; }
+       
+         .nav .hamburger__tap--one, .nav .hamburger__tap--two, .nav .hamburger__tap--three {
+           width: 35px;
+           height: 3px;
+           margin: 7px auto;
+           display: block;
+           background: #fff;
+           border-radius: 10%;
+           -webkit-transform: translateY(20px);
+           -ms-transform: translateY(20px);
+           transform: translateY(20px);
+           position: relative; }
+     .nav .tapOne {
+       -webkit-transform-origin: left;
+       -ms-transform-origin: left;
+       transform-origin: left;
+       /*transform: rotate(45deg)                 translate(20px,25px);*/
+       -webkit-animation: rotateTabOne 0.5s ease;
+       animation: rotateTabOne 0.5s ease;
+       -webkit-animation-fill-mode: forwards;
+       animation-fill-mode: forwards; }
+     .nav .tapTwo {
+       display: none; }
+     .nav .tapThree {
+       -webkit-animation: rotateTabThree 0.5s ease;
+       animation: rotateTabThree 0.5s ease;
+       -webkit-animation-fill-mode: forwards;
+       animation-fill-mode: forwards; }
+   @-webkit-keyframes rotateTabOne {
+     0% {
+       -webkit-transform: rotate(21deg) translate(10px, 10px);
+       transform: rotate(21deg) translate(10px, 10px); }
+     100% {
+       -webkit-transform: rotate(45deg) translate(18px, 10px);
+       transform: rotate(45deg) translate(18px, 10px); } }
+   @keyframes rotateTabOne {
+     0% {
+       -webkit-transform: rotate(21deg) translate(10px, 10px);
+       transform: rotate(21deg) translate(10px, 10px); }
+     100% {
+       -webkit-transform: rotate(45deg) translate(18px, 10px);
+       transform: rotate(45deg) translate(18px, 10px); } }
+   @-webkit-keyframes rotateTabThree {
+     0% {
+       -webkit-transform: rotate(20deg) translate(10px, 10px);
+       transform: rotate(20deg) translate(10px, 10px); }
+     100% {
+       -webkit-transform: rotate(-50deg) translate(-18px, 12px);
+       transform: rotate(-50deg) translate(-18px, 12px); } }
+   @keyframes rotateTabThree {
+     0% {
+       -webkit-transform: rotate(20deg) translate(10px, 10px);
+       transform: rotate(20deg) translate(10px, 10px); }
+     100% {
+       -webkit-transform: rotate(-50deg) translate(-18px, 12px);
+       transform: rotate(-50deg) translate(-18px, 12px); } }
+   .resNavH {
+     -webkit-animation: resNavHeightAnim 0.5s ease forwards;
+     animation: resNavHeightAnim 0.5s ease forwards; }
+   @-webkit-keyframes resNavHeightAnim {
+     0% {
+       height: 0px; }
+     100% {
+       height: 200px; } }
+   @keyframes resNavHeightAnim {
+     0% {
+       height: 0px; }
+     100% {
+       height: 200px; } }
+   .mainTitle {
+     -webkit-perspective: 800px;
+     perspective: 800px;
+     top: 15%;
+     left: 20%; }
+     .mainTitle p:nth-of-type(1) {
+       font-size: 250%;
+       font-weight: 600;
+       -webkit-transform: translateZ(20px);
+       transform: translateZ(20px);
+       margin-bottom: -10px; }
+     .mainTitle p:nth-of-type(2) {
+       font-size: 400%;
+       font-weight: 700;
+       -webkit-transform: translateZ(100px);
+       transform: translateZ(100px); }
+   .topic__hline {
+     width: 30%;
+     height: 3px; }
+   .topic__p {
+     width: 85%;
+     height: auto; }
+   .recentWorkVideo {
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0; }
+     .recentWorkVideo .video-js {
+       width: 100%;
+       height: 50%;
+       top: 20%;
+       left: 0%; }
+     .recentWorkVideo .closeVid {
+       right: 5%;
+       top: 5%; }
+   .recentWork {
+     height: 150px;
+     overflow: hidden; }
+     .recentWork img {
+       -webkit-transform: translateY(-10px);
+       -ms-transform: translateY(-10px);
+       transform: translateY(-10px); }
+     .recentWork:hover img {
+       -webkit-transform: scale(1.4) translateY(-10px);
+       -ms-transform: scale(1.4) translateY(-10px);
+       transform: scale(1.4) translateY(-10px); }
+     .recentWork .vidBtn {
+       width: 70px;
+       height: 70px;
+       top: 30%;
+       left: 40%; }
+       .recentWork .vidBtn:before {
+         top: 38%;
+         left: 31%;
+         border: 9px solid #000;
+         border-color: #000 transparent transparent  #000; }
+   .films {
+     width: 100%;
+     height: auto;
+     display: block;
+     background: #fff;
+     -webkit-perspective: 500px;
+     perspective: 500px;
+     -webkit-transform-style: preserve-3d;
+     transform-style: preserve-3d; }
+     .films__banner p {
+       padding: 30px 0;
+       font-weight: 500;
+       font-size: 19px; }
+     .films__grid {
+       display: -ms-grid;
+       display: grid;
+       width: 100%;
+       height: auto;
+      /* -ms-grid-columns: (100%)[1];*/
+       grid-template-columns: repeat(1, 100%);
+       /*-ms-grid-rows: (230px)[2];*/
+       grid-template-rows: repeat(2, 230px); }
+     .films__banner2 img {
+       width: 90%;
+       margin-left: 5%; }
+   .parallax {
+     height: auto;
+     max-height: auto;
+     padding: 10% 0;
+     background-image: url('../../assets/img/athlete.jpg')}
+     .parallax__p {
+       width: 70%;
+       top: 30%; }
+     .parallax__p2 {
+       top: 15%;
+       color: red; }
+   .services {
+     width: 100%;
+     height: auto; }
+     .services__grid {
+       width: 60%;
+       height: 100%;
+       overflow: hidden;
+       display: -ms-grid;
+       display: grid;
+       /*-ms-grid-columns: (100%)[1];*/
+       grid-template-columns: repeat(1, 100%);
+       margin: auto; }
+     .services .box__card__front p, .services .box__card__back p {
+       top: 10%; } }
+ 
